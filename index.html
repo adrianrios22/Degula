@@ -29,8 +29,8 @@
       --fondo-3: #171717;
       --tarjeta: #191919;
 
-      --principal: #edce59;
-      --principal-claro: #ffe37b;
+      --principal: #f8b810;
+      --principal-claro: #ffc52e;
 
       --texto: #ffffff;
       --texto-gris: #b7b7b7;
@@ -263,7 +263,7 @@
       width: 500px;
       height: 500px;
       border-radius: 50%;
-      background: rgba(237,206,89,.10);
+      background: rgba(248,184,16,.10);
       filter: blur(100px);
       right: -100px;
       top: 60px;
@@ -282,8 +282,8 @@
       padding: 7px 14px;
       margin-bottom: 22px;
       border-radius: 999px;
-      border: 1px solid rgba(237,206,89,.35);
-      background: rgba(237,206,89,.08);
+      border: 1px solid rgba(248,184,16,.35);
+      background: rgba(248,184,16,.08);
       color: var(--principal);
       font-size: 12px;
       letter-spacing: 1.5px;
@@ -831,18 +831,18 @@
     /* =======================================================
        MENÚ ESENCIAL - CAMBIAR COLORES EN :root AL INICIO
        ======================================================= */
-    .menu-esencial {background: radial-gradient(ellipse at 15% 0%,rgba(237,206,89,.07),transparent 55%),var(--fondo-2);}
+    .menu-esencial {background: radial-gradient(ellipse at 15% 0%,rgba(248,184,16,.07),transparent 55%),var(--fondo-2);}
     .menu-cabecera {margin-bottom:32px}
     .categorias-pestanas {display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;scroll-margin-top:100px}
     .pestana-menu {cursor:pointer;display:flex;align-items:center;gap:9px;padding:13px 19px;border:1.5px solid #484848;border-radius:999px;background:#191919;color:#eee;font-weight:800;transition:border-color .25s,transform .25s,box-shadow .25s,background .25s}
     .pestana-menu:hover {border-color:var(--principal);transform:translateY(-2px)}
-    .pestana-menu.activa {border-color:var(--principal);color:var(--principal);background:#24200e;box-shadow:0 0 0 1px var(--principal),0 0 20px rgba(237,206,89,.26)}
+    .pestana-menu.activa {border-color:var(--principal);color:var(--principal);background:#24200e;box-shadow:0 0 0 1px var(--principal),0 0 20px rgba(248,184,16,.26)}
     .menu-distribucion {display:grid;grid-template-columns:minmax(0,1fr) 345px;gap:26px;align-items:start}
     .lista-productos {background:linear-gradient(150deg,#1c1c1c,#121212);border:1px solid #3a3a3a;border-radius:22px;padding:13px;min-width:0;perspective:1100px}
     .plato-item {position:relative;padding:18px 18px;border-radius:15px;border:2px solid transparent;background:transparent;margin:3px 0;transition:transform .34s cubic-bezier(.2,.9,.2,1.1),box-shadow .34s,border-color .34s,background .34s;z-index:1}
     .plato-item:not(:last-child):after {content:"";position:absolute;left:18px;right:18px;bottom:-4px;height:1px;background:#383838}
     .plato-item:hover {border-color:#78621e;background:#25231c}
-    .plato-item.seleccionado {z-index:5;transform:translate3d(0,-6px,26px) scale(1.025);border-color:var(--principal);background:linear-gradient(110deg,#302713,#181818 65%);box-shadow:0 17px 0 -10px #9d720d,0 24px 38px #000b,0 0 25px rgba(237,206,89,.23)}
+    .plato-item.seleccionado {z-index:5;transform:translate3d(0,-6px,26px) scale(1.025);border-color:var(--principal);background:linear-gradient(110deg,#302713,#181818 65%);box-shadow:0 17px 0 -10px #9d720d,0 24px 38px #000b,0 0 25px rgba(248,184,16,.23)}
     .plato-linea {display:flex;align-items:center;gap:14px;justify-content:space-between}
     .plato-texto {min-width:0;flex:1}
     .plato-texto h3 {font-size:19px;font-weight:900;margin-bottom:4px}
@@ -926,7 +926,7 @@
         min-height: 72px;
         height: 18.75vw;
         padding: 2.8vw 2.7vw 3vw 4.7vw;
-        border-top: 2px solid #edce59;
+        border-top: 2px solid #f8b810;
         background: linear-gradient(115deg, #101010, #0d0d0d);
         box-shadow: none;
         font-family: Arial, sans-serif;
@@ -951,21 +951,21 @@
         min-width: 4.4vw; height: 4.4vw;
         padding: 0 .6vw;
         border-radius: 50%;
-        color: #080808; background: #edce59;
+        color: #080808; background: #f8b810;
         font-size: 2.9vw;
       }
       #totalMovil {
         border-left: 1px solid #666;
         text-align: center;
         font-size: 4.4vw;
-        color: #edce59;
+        color: #f8b810;
         white-space: nowrap;
       }
       .ver-carrito-movil {
         display: grid; place-items: center;
         min-height: 9vw;
         padding: 1vw;
-        border: 1px solid #edce59;
+        border: 1px solid #f8b810;
         border-radius: 3.5vw;
         white-space: nowrap;
       }
@@ -975,8 +975,8 @@
 
     /* Portada de Degula y recorrido amarillo en los bordes. */
     :root {
-      --principal: #edce59;
-      --principal-claro: #ffe37b;
+      --principal: #f8b810;
+      --principal-claro: #ffc52e;
 
     }
 
@@ -1014,7 +1014,7 @@
     .pestana-menu.activa { --superficie-boton: #24200e; color: var(--principal-claro); }
     .elegir-plato, .ver-carrito-movil { --superficie-boton: #111; }
     .sumar-plato, .boton-finalizar, .plato-item.seleccionado .elegir-plato {
-      --superficie-boton: #edce59;
+      --superficie-boton: #f8b810;
       color: #111;
     }
     .boton-finalizar:hover { color: #111; }
@@ -1022,7 +1022,7 @@
     .sumar-plato, .boton-finalizar, .ver-carrito-movil {
       --borde-amarillo: conic-gradient(from var(--angulo-borde),
         #a8750c 0deg, #a8750c 190deg, #d99a0a 235deg,
-        #ffe37b 295deg, #edce59 320deg, #a8750c 360deg);
+        #ffc52e 295deg, #f8b810 320deg, #a8750c 360deg);
       border: 2px solid transparent;
       background: linear-gradient(var(--superficie-boton), var(--superficie-boton)) padding-box,
                   var(--borde-amarillo) border-box;
@@ -1030,7 +1030,7 @@
       box-shadow: none;
     }
     .plato-item.seleccionado .elegir-plato, .elegir-plato:hover { border-color: transparent; }
-    .elegir-plato:hover { background: linear-gradient(#edce59, #edce59) padding-box,
+    .elegir-plato:hover { background: linear-gradient(#f8b810, #f8b810) padding-box,
                                      var(--borde-amarillo) border-box; }
     .hero-botones a:hover { background: linear-gradient(#17140f, #17140f) padding-box,
                                        var(--borde-amarillo) border-box; }
@@ -1117,7 +1117,7 @@
     }
 
     /* DEGULA: imagen original encuadrada y colores de la carta. */
-    :root { --fondo:#000; --fondo-2:#080808; --principal:#edce59; --principal-claro:#ffe37b; }
+    :root { --fondo:#000; --fondo-2:#080808; --principal:#f8b810; --principal-claro:#ffc52e; }
     body { background:#000; }
     header { background:rgba(6,6,6,.82); backdrop-filter:blur(18px); }
     .logo { font-size:clamp(32px,4vw,44px); letter-spacing:-2px; }
@@ -1140,7 +1140,7 @@
     .enviar-pedido { background:var(--principal); color:#111; }
     .carrito-en-vivo { color:var(--principal); }
     #estadoContacto a { color:var(--principal); }
-    .ventana-pedido { background:rgba(18,18,18,.78); border-color:rgba(237,206,89,.4); }
+    .ventana-pedido { background:rgba(18,18,18,.78); border-color:rgba(248,184,16,.4); }
     .capa-pedido { background:#0009; backdrop-filter:blur(8px); }
     .plato-precio { font-size:18px; }
     .whatsapp-flotante { display:none!important; }
@@ -1164,6 +1164,24 @@
       .barra-carrito-movil { font-size:clamp(12px,3.7vw,22px); }
     }
 
+
+    /* Símbolo con transparencia real: sin placa ni fondo. */
+    .logo { gap:8px; }
+    .logo img.logo-degula, header .logo img.logo-degula {
+      display:block; width:72px; height:42px; flex:0 0 72px;
+      object-fit:contain; background:transparent; border:0;
+      border-radius:0; box-shadow:none;
+    }
+    @media(max-width:720px) {
+      .logo img.logo-degula, header .logo img.logo-degula {
+        width:62px; height:38px; flex-basis:62px;
+      }
+    }
+    @media(max-width:380px) {
+      header .logo { font-size:32px; gap:6px; }
+      header .logo img.logo-degula { width:48px; height:32px; flex-basis:48px; }
+    }
+
   </style>
 </head>
 
@@ -1180,7 +1198,7 @@
 
       <!-- CAMBIAR NOMBRE DEL CLIENTE -->
 
-      <a href="#inicio" class="logo" aria-label="Degula, inicio"><span>Degula</span></a>
+      <a href="#inicio" class="logo" aria-label="Degula, inicio"><img class="logo-degula" src="./imagenes/logo-degula.png" width="72" height="42" alt=""><span>Degula</span></a>
 
 
       <nav class="nav-links" id="navLinks"><a href="#menu">Menú</a><a href="#ubicacion">Contacto</a></nav>
@@ -1372,7 +1390,7 @@
 
   <footer>
     <div class="contenedor">
-      <a href="#inicio" class="logo" aria-label="Degula, inicio"><span>Degula</span></a>
+      <a href="#inicio" class="logo" aria-label="Degula, inicio"><img class="logo-degula" src="./imagenes/logo-degula.png" width="72" height="42" alt=""><span>Degula</span></a>
       <div class="copyright">© 2026 Degula</div>
     </div>
   </footer>
